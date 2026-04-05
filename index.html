@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Action Hospitality Group | Global Luxury Hospitality, FF&E & Design Services</title>
+<meta name="description" content="Action Hospitality Group — Global luxury hospitality procurement, FF&E specification, interior design services, project management, and full property turnkey for hotels, multifamily, and country clubs. HQ Dallas, TX.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --black:#080807;
+  --white:#f8f6f1;
+  --gold:#b8954f;
+  --gold-light:#d8c08a;
+  --gray-light:#e2dfd8;
+  --gray-mid:#9a968e;
+  --gray-dark:#3a3835;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Montserrat',sans-serif;
+}
+html{scroll-behavior:smooth;}
+body{font-family:var(--sans);background:var(--white);color:var(--black);overflow-x:hidden;}
+
+/* LANG BAR */
+.lang-bar{background:var(--black);padding:7px 3rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(201,169,110,0.12);}
+.lang-bar-left{font-size:9px;font-weight:500;letter-spacing:0.25em;text-transform:uppercase;color:var(--gray-mid);}
+.lang-bar-left span{color:var(--gold);}
+.lang-switcher{display:flex;align-items:center;}
+.lang-btn{font-size:9px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray-mid);background:none;border:none;cursor:pointer;padding:3px 10px;border-right:1px solid rgba(255,255,255,0.1);transition:color 0.2s;font-family:var(--sans);}
+.lang-btn:last-child{border-right:none;}
+.lang-btn:hover,.lang-btn.active{color:var(--gold);}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 3rem;background:rgba(8,8,7,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,169,110,0.18);}
+.logo-wrap{display:flex;align-items:center;gap:14px;cursor:pointer;text-decoration:none;}
+.logo-icon{width:42px;height:42px;flex-shrink:0;}
+.logo-text{display:flex;flex-direction:column;line-height:1;}
+.logo-text .wordmark{font-family:var(--serif);font-size:21px;font-weight:300;color:var(--white);letter-spacing:0.06em;}
+.logo-text .tagline{font-family:var(--sans);font-size:7px;font-weight:500;letter-spacing:0.28em;color:var(--gold);text-transform:uppercase;margin-top:3px;}
+.nav-links{display:flex;gap:2rem;list-style:none;}
+.nav-links a{font-size:9px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gray-mid);text-decoration:none;transition:color 0.3s;}
+.nav-links a:hover{color:var(--gold);}
+.nav-cta{font-size:9px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--black);background:var(--gold);padding:10px 22px;text-decoration:none;transition:opacity 0.3s;white-space:nowrap;}
+.nav-cta:hover{opacity:0.85;}
+
+/* HERO */
+.hero{min-height:100vh;background:var(--black);display:grid;grid-template-columns:55% 45%;overflow:hidden;position:relative;}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:7rem 4rem 5rem 5rem;position:relative;z-index:2;}
+.hero-eyebrow{font-size:9px;font-weight:600;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:1.8rem;display:flex;align-items:center;gap:14px;}
+.hero-eyebrow::before{content:'';display:block;width:28px;height:1px;background:var(--gold);}
+.hero-h1{font-family:var(--serif);font-size:clamp(3.5rem,5vw,6.5rem); letter-spacing:0.02em;font-weight:300;line-height:1.05;color:var(--white);}
+.hero-h1 em{font-style:italic;color:var(--gold);}
+.hero-h1 .indent{padding-left:2rem;}
+.hero-sub{font-size:12px;font-weight:300;line-height:2;color:var(--gray-mid);max-width:420px;margin:1.8rem 0 2.8rem;letter-spacing:0.03em;}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}
+.btn-primary{font-size:9px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);background:transparent;padding:13px 28px;text-decoration:none;transition:all 0.3s;border:1px solid var(--gold);cursor:pointer;display:inline-block;}
+.btn-primary:hover{background:var(--gold);color:var(--black);}
+.btn-outline{font-size:9px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--white);background:transparent;padding:13px 28px;text-decoration:none;border:1px solid rgba(255,255,255,0.25);transition:all 0.3s;cursor:pointer;display:inline-block;}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold);}
+.hero-right{position:relative;overflow:hidden;}
+.hero-right::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--black) 0%,transparent 28%);z-index:1;}
+.hero-img{width:100%;height:100%;object-fit:cover;filter:grayscale(15%) contrast(1.08);opacity:0.65;}
+.hero-stats{position:absolute;bottom:3rem;left:5rem;z-index:2;display:flex;gap:2.5rem;}
+.stat-num{font-family:var(--serif);font-size:2rem;font-weight:300;color:var(--white);line-height:1;}
+.stat-label{font-size:8px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-top:4px;}
+
+/* MARQUEE */
+.world-band{background:var(--gold);padding:11px 0;overflow:hidden;white-space:nowrap;}
+.world-inner{display:inline-block;animation:scroll-left 38s linear infinite;}
+.world-inner span{font-size:9px;font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:var(--black);margin:0 1.8rem;}
+.world-inner span::before{content:'✦';margin-right:1.8rem;}
+@keyframes scroll-left{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+
+/* HQ BAND */
+.hq-band{background:var(--black);padding:1.6rem 5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(201,169,110,0.1);}
+.hq-left{display:flex;align-items:center;gap:1.5rem;}
+.hq-dot{width:7px;height:7px;background:var(--gold);border-radius:50%;animation:pulse 2s ease-in-out infinite;flex-shrink:0;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.5;transform:scale(1.3);}}
+.hq-text{font-size:10px;font-weight:300;letter-spacing:0.08em;color:var(--gray-mid);}
+.hq-text strong{color:var(--gold);font-weight:500;}
+.hq-regions{display:flex;gap:1rem;flex-wrap:wrap;}
+.hq-region{font-size:8px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray-mid);padding:4px 12px;border:1px solid rgba(201,169,110,0.15);}
+.hq-region.active{color:var(--gold);border-color:var(--gold);}
+
+/* SHARED SECTION STYLES */
+.section-label{font-size:8px;font-weight:600;letter-spacing:0.32em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:flex;align-items:center;gap:12px;}
+.section-label::before{content:'';display:block;width:22px;height:1px;background:var(--gold);}
+.section-h2{font-family:var(--serif);font-size:clamp(1.9rem,3vw,3rem);font-weight:300;line-height:1.15;color:var(--black);margin-bottom:1.5rem;}
+.section-h2 em{font-style:italic;color:var(--gold);}
+.section-h2.light{color:var(--white);}
+.section-body{font-size:12px;line-height:2;color:var(--gray-dark);font-weight:300;letter-spacing:0.02em;}
+.gold-line{width:36px;height:1px;background:var(--gold);margin:1.4rem 0;}
+
+/* ABOUT */
+.about{padding:7rem 5rem;display:grid;grid-template-columns:1fr 1fr;gap:7rem;align-items:center;background:var(--white);}
+.about-img-wrap{position:relative;}
+.about-img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(8%);}
+.about-badge{position:absolute;bottom:-1.5rem;left:-1.5rem;background:var(--black);padding:1.8rem;text-align:center;min-width:140px;}
+.about-badge .big{font-family:var(--serif);font-size:2rem;font-weight:300;color:var(--gold);display:block;line-height:1;}
+.about-badge .small{font-size:7px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gray-mid);display:block;margin-top:5px;}
+.region-pills{display:flex;gap:0.7rem;margin-top:2rem;flex-wrap:wrap;}
+.region-pill{font-size:8px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;padding:5px 12px;border:1px solid var(--gray-light);color:var(--gray-dark);}
+
+/* SERVICES */
+.services{padding:5rem;background:var(--black);}
+.services-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3.5rem;}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(201,169,110,0.1);}
+.svc-card{background:var(--black);padding:2.5rem 2rem;transition:background 0.35s;position:relative;overflow:hidden;min-height:230px;display:flex;flex-direction:column;justify-content:space-between;}
+.svc-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--gold);transform:scaleX(0);transition:transform 0.4s;}
+.svc-card:hover{background:#0f0f0e;}
+.svc-card:hover::after{transform:scaleX(1);}
+.svc-num{font-family:var(--serif);font-size:2.8rem;font-weight:300;color:rgba(201,169,110,0.1);line-height:1;margin-bottom:0.8rem;}
+.svc-icon{font-size:1.3rem;margin-bottom:0.6rem;display:block;}
+.svc-name{font-family:var(--serif);font-size:1.3rem;font-weight:400;color:var(--white);margin-bottom:0.5rem;}
+.svc-desc{font-size:10px;font-weight:300;line-height:1.85;color:var(--gray-mid);letter-spacing:0.02em;}
+.svc-arrow{margin-top:1rem;font-size:9px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);opacity:0;transition:opacity 0.3s;}
+.svc-card:hover .svc-arrow{opacity:1;}
+/* NEW: design service highlight */
+.svc-card.featured-svc{background:#0d0c0a;border:1px solid rgba(201,169,110,0.2);}
+
+/* DESIGN SERVICES BANNER */
+.design-banner{background:linear-gradient(135deg,#0d0c0a 0%,#1a1610 50%,#0d0c0a 100%);border-top:1px solid rgba(201,169,110,0.15);border-bottom:1px solid rgba(201,169,110,0.15);padding:5rem;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+.design-badge{display:inline-block;font-size:7px;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;color:var(--black);background:var(--gold);padding:5px 14px;margin-bottom:1.5rem;}
+.design-list{list-style:none;margin-top:1.5rem;display:flex;flex-direction:column;gap:0.8rem;}
+.design-list li{font-size:11px;font-weight:300;color:var(--gray-mid);display:flex;align-items:flex-start;gap:10px;line-height:1.7;}
+.design-list li::before{content:'✦';color:var(--gold);font-size:8px;margin-top:3px;flex-shrink:0;}
+.design-cards{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(201,169,110,0.08);}
+.design-card{background:#0d0c0a;padding:1.8rem;transition:background 0.3s;}
+.design-card:hover{background:#121110;}
+.design-card-icon{font-size:1.4rem;margin-bottom:0.7rem;display:block;}
+.design-card-title{font-family:var(--serif);font-size:1.1rem;color:var(--white);margin-bottom:0.4rem;}
+.design-card-desc{font-size:10px;font-weight:300;color:var(--gray-mid);line-height:1.75;}
+
+/* PROCESS */
+.process{padding:7rem 5rem;background:var(--white);}
+.process-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:4rem;position:relative;}
+.process-steps::before{content:'';position:absolute;top:2rem;left:10%;right:10%;height:1px;background:var(--gray-light);z-index:0;}
+.process-step{text-align:center;padding:0 1.2rem;position:relative;z-index:1;}
+.step-circle{width:4rem;height:4rem;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;background:var(--white);}
+.step-num{font-family:var(--serif);font-size:1.3rem;font-weight:300;color:var(--gold);}
+.step-title{font-family:var(--serif);font-size:1.1rem;font-weight:400;color:var(--black);margin-bottom:0.6rem;}
+.step-desc{font-size:10px;font-weight:300;line-height:1.8;color:var(--gray-mid);}
+/* highlight optional design step */
+.step-circle.design-step{border-color:var(--gold);background:rgba(201,169,110,0.06);}
+
+/* WHO WE SERVE */
+.serve{padding:7rem 5rem;background:var(--black);}
+.serve-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(201,169,110,0.08);margin-top:4rem;}
+.serve-card{background:var(--black);padding:2.5rem;position:relative;transition:background 0.3s;overflow:hidden;}
+.serve-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:var(--gold);transform:scaleX(0);transition:transform 0.4s;}
+.serve-card:hover{background:#0f0f0e;}
+.serve-card:hover::before{transform:scaleX(1);}
+.serve-tag{display:inline-block;font-size:8px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,169,110,0.3);padding:4px 10px;margin-bottom:1.2rem;}
+.serve-num{font-family:var(--serif);font-size:3rem;font-weight:300;color:rgba(201,169,110,0.08);position:absolute;top:1.5rem;right:1.5rem;line-height:1;}
+.serve-title{font-family:var(--serif);font-size:1.4rem;font-weight:400;color:var(--white);margin-bottom:0.8rem;}
+.serve-body{font-size:11px;line-height:1.9;color:var(--gray-mid);font-weight:300;}
+
+/* ROI SECTION */
+.roi-section{padding:7rem 5rem;background:var(--white);}
+.roi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:4rem;}
+.roi-card{border-left:2px solid var(--gold);padding:2rem 2rem 2rem 2.5rem;background:var(--white);transition:box-shadow 0.3s;}
+.roi-card:hover{box-shadow:0 4px 28px rgba(201,169,110,0.1);}
+.roi-icon{font-size:1.6rem;margin-bottom:1rem;display:block;}
+.roi-title{font-family:var(--serif);font-size:1.25rem;font-weight:400;color:var(--black);margin-bottom:0.7rem;}
+.roi-body{font-size:11px;line-height:1.9;color:var(--gray-dark);font-weight:300;}
+.roi-stat{font-family:var(--serif);font-size:1.8rem;font-weight:300;color:var(--gold);margin-top:1rem;display:block;}
+.roi-stat-label{font-size:8px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray-mid);margin-top:3px;}
+
+/* PARTNERS */
+.partners{padding:7rem 5rem;background:var(--white);}
+.partners-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;margin-top:4rem;}
+.partner-card{border:1px solid var(--gray-light);padding:2.5rem;transition:all 0.3s;position:relative;overflow:hidden;}
+.partner-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--gold);transform:scaleX(0);transition:transform 0.4s;}
+.partner-card:hover{border-color:var(--gold-light);transform:translateY(-4px);}
+.partner-card:hover::after{transform:scaleX(1);}
+.partner-icon{font-size:1.8rem;margin-bottom:1rem;display:block;}
+.partner-title{font-family:var(--serif);font-size:1.4rem;font-weight:400;color:var(--black);margin-bottom:0.6rem;}
+.partner-body{font-size:11px;line-height:1.9;color:var(--gray-dark);font-weight:300;}
+
+/* PRODUCTS — expanded */
+.products{padding:5rem;background:var(--black);}
+.products-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3.5rem;}
+.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(201,169,110,0.1);}
+.prod-card{background:var(--black);padding:2rem 1.8rem;transition:background 0.35s;position:relative;overflow:hidden;min-height:180px;display:flex;flex-direction:column;justify-content:space-between;}
+.prod-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--gold);transform:scaleX(0);transition:transform 0.4s;}
+.prod-card:hover{background:#0f0f0e;}
+.prod-card:hover::after{transform:scaleX(1);}
+.prod-num{font-family:var(--serif);font-size:2.2rem;font-weight:300;color:rgba(201,169,110,0.1);line-height:1;margin-bottom:0.6rem;}
+.prod-name{font-family:var(--serif);font-size:1.2rem;font-weight:400;color:var(--white);margin-bottom:0.4rem;}
+.prod-desc{font-size:10px;font-weight:300;line-height:1.8;color:var(--gray-mid);}
+.prod-arrow{margin-top:0.8rem;font-size:9px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);opacity:0;transition:opacity 0.3s;}
+.prod-card:hover .prod-arrow{opacity:1;}
+.prod-tag{display:inline-block;font-size:7px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,169,110,0.2);padding:3px 8px;margin-bottom:0.5rem;}
+
+/* EXISTING PROPERTIES CTA */
+.existing-prop{background:var(--gold);padding:5rem;}
+.existing-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+.existing-h{font-family:var(--serif);font-size:clamp(1.6rem,2.5vw,2.4rem);font-weight:300;color:var(--black);line-height:1.2;margin-bottom:1rem;}
+.existing-body{font-size:12px;font-weight:300;color:rgba(8,8,7,0.7);line-height:1.9;}
+.existing-list{list-style:none;margin-top:1.5rem;display:flex;flex-direction:column;gap:0.7rem;}
+.existing-list li{font-size:10px;font-weight:500;color:var(--black);display:flex;align-items:center;gap:10px;letter-spacing:0.04em;}
+.existing-list li::before{content:'→';font-weight:600;}
+.btn-dark{font-size:9px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--white);background:var(--black);padding:14px 28px;text-decoration:none;transition:opacity 0.3s;display:inline-block;margin-top:2rem;}
+.btn-dark:hover{opacity:0.8;}
+
+/* GLOBAL */
+.global-reach{background:var(--white);padding:6rem 5rem;border-top:1px solid var(--gray-light);}
+.reach-header{margin-bottom:4rem;}
+.reach-cards{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--gray-light);}
+.reach-card{background:var(--white);padding:1.8rem 1rem;text-align:center;}
+.reach-card-flag{font-size:1.4rem;display:block;margin-bottom:0.6rem;}
+.reach-card-name{font-size:8px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray-dark);}
+.reach-card-status{font-size:7px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-top:4px;}
+
+/* LANGUAGES */
+.lang-section{padding:5rem;background:var(--black);}
+.lang-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:rgba(201,169,110,0.08);margin-top:3rem;}
+.lang-card{background:var(--black);padding:1.5rem 1rem;text-align:center;transition:background 0.3s;}
+.lang-card:hover{background:#0f0f0e;}
+.lang-flag{font-size:1.5rem;display:block;margin-bottom:0.5rem;}
+.lang-name{font-size:9px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray-mid);}
+.lang-native{font-size:11px;font-weight:300;color:rgba(201,169,110,0.6);margin-top:3px;}
+
+/* MISSION */
+.mission{background:var(--black);padding:7rem 5rem;text-align:center;position:relative;overflow:hidden;border-top:1px solid rgba(201,169,110,0.1);}
+.mission::before{content:'"';font-family:var(--serif);font-size:18rem;font-weight:300;color:rgba(201,169,110,0.04);position:absolute;top:-3rem;left:2rem;line-height:1;pointer-events:none;}
+.mission-quote{font-family:var(--serif);font-size:clamp(1.5rem,2.8vw,2.6rem);font-weight:300;font-style:italic;color:var(--white);max-width:820px;margin:0 auto 2rem;line-height:1.45;position:relative;z-index:1;}
+.mission-attr{font-size:9px;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);}
+.mission-dividers{display:flex;justify-content:center;gap:1rem;margin:1.5rem 0;}
+.mission-dividers span{width:1px;height:40px;background:rgba(201,169,110,0.3);display:block;}
+
+/* CONTACT */
+.contact{padding:7rem 5rem;display:grid;grid-template-columns:1fr 1.2fr;gap:7rem;background:var(--white);}
+.cinfo-item{margin-bottom:1.8rem;}
+.cinfo-label{font-size:8px;font-weight:600;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:5px;}
+.cinfo-val{font-size:12px;font-weight:300;color:var(--gray-dark);line-height:1.7;}
+.cinfo-val a{color:var(--gold);text-decoration:none;}
+.hq-marker{display:flex;align-items:center;gap:8px;margin-top:4px;}
+.hq-dot-sm{width:6px;height:6px;background:var(--gold);border-radius:50%;flex-shrink:0;}
+.hq-marker-text{font-size:10px;font-weight:500;color:var(--gold);letter-spacing:0.1em;}
+.social-links{display:flex;gap:1rem;margin-top:0.5rem;flex-wrap:wrap;}
+.social-link{font-size:8px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,169,110,0.3);padding:6px 14px;text-decoration:none;transition:all 0.3s;}
+.social-link:hover{background:var(--gold);color:var(--black);}
+.contact-form{display:flex;flex-direction:column;gap:1rem;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.form-group{display:flex;flex-direction:column;gap:5px;}
+.form-group label{font-size:8px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gray-dark);}
+.form-group input,.form-group select,.form-group textarea{border:1px solid var(--gray-light);padding:11px 13px;font-family:var(--sans);font-size:12px;font-weight:300;color:var(--black);background:var(--white);outline:none;transition:border-color 0.3s;width:100%;}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold);}
+.form-group textarea{min-height:100px;resize:vertical;}
+.form-submit{font-size:9px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--black);background:var(--gold);border:none;padding:14px 30px;cursor:pointer;transition:opacity 0.3s;width:fit-content;}
+.form-submit:hover{opacity:0.85;}
+.form-note{font-size:10px;font-weight:300;color:var(--gray-mid);}
+
+/* FOOTER */
+footer{background:var(--black);padding:3rem 5rem;border-top:1px solid rgba(201,169,110,0.12);}
+.footer-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,0.05);}
+.footer-brand{display:flex;align-items:center;gap:14px;}
+.footer-tagline{font-size:9px;color:#5a5854;font-weight:300;letter-spacing:0.05em;margin-top:6px;max-width:280px;line-height:1.7;}
+.footer-cols{display:flex;gap:4rem;}
+.footer-col-title{font-size:8px;font-weight:600;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;}
+.footer-col-links{list-style:none;display:flex;flex-direction:column;gap:0.6rem;}
+.footer-col-links a{font-size:10px;font-weight:300;color:var(--gray-mid);text-decoration:none;transition:color 0.3s;letter-spacing:0.05em;}
+.footer-col-links a:hover{color:var(--gold);}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;}
+.foot-copy{font-size:9px;color:#3a3835;font-weight:300;letter-spacing:0.05em;}
+.foot-social{display:flex;gap:1.5rem;}
+.foot-social a{font-size:9px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray-mid);text-decoration:none;transition:color 0.3s;}
+.foot-social a:hover{color:var(--gold);}
+
+/* FADE */
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.7s ease,transform 0.7s ease;}
+.fade-in.visible{opacity:1;transform:translateY(0);}
+
+/* RESPONSIVE */
+@media(max-width:960px){
+  .lang-bar{padding:7px 1.5rem;}
+  nav{padding:1rem 1.5rem;}
+  .nav-links{display:none;}
+  .hero{grid-template-columns:1fr;}
+  .hero-right{height:45vh;}
+  .hero-left{padding:7rem 2rem 4rem;}
+  .hero-stats{left:2rem;bottom:2rem;gap:1.5rem;}
+  .hq-band{padding:1.2rem 2rem;flex-direction:column;gap:1rem;align-items:flex-start;}
+  .about{grid-template-columns:1fr;padding:4rem 2rem;gap:3rem;}
+  .about-img-wrap{padding-bottom:2rem;}
+  .services,.products,.lang-section{padding:4rem 2rem;}
+  .services-grid,.prod-grid{grid-template-columns:1fr 1fr;}
+  .process{padding:4rem 2rem;}
+  .process-steps{grid-template-columns:1fr 1fr;gap:2rem;}
+  .process-steps::before{display:none;}
+  .serve{padding:4rem 2rem;}
+  .serve-grid{grid-template-columns:1fr;}
+  .partners{padding:4rem 2rem;}
+  .partners-grid{grid-template-columns:1fr;}
+  .roi-section{padding:4rem 2rem;}
+  .roi-grid{grid-template-columns:1fr;}
+  .design-banner{grid-template-columns:1fr;padding:4rem 2rem;gap:3rem;}
+  .design-cards{grid-template-columns:1fr 1fr;}
+  .existing-prop{padding:4rem 2rem;}
+  .existing-inner{grid-template-columns:1fr;gap:3rem;}
+  .global-reach,.lang-section{padding:4rem 2rem;}
+  .reach-cards{grid-template-columns:repeat(3,1fr);}
+  .lang-grid{grid-template-columns:repeat(3,1fr);}
+  .mission{padding:5rem 2rem;}
+  .contact{grid-template-columns:1fr;padding:4rem 2rem;gap:3rem;}
+  .form-row{grid-template-columns:1fr;}
+  footer{padding:2rem;}
+  .footer-top{flex-direction:column;gap:2rem;}
+  .footer-cols{flex-wrap:wrap;gap:2rem;}
+  .footer-bottom{flex-direction:column;gap:1rem;text-align:center;}
+}
+
+.hero-img {
+  animation: slowZoom 18s ease-in-out infinite alternate;
+}
+
+@keyframes slowZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.06); }
+}
+
+</style>
+</head>
+<body>
+
+<!-- LANG BAR -->
+<div class="lang-bar">
+  <div class="lang-bar-left">Global Headquarters: <span>Dallas, Texas</span></div>
+  <div class="lang-switcher">
+    <button class="lang-btn active">EN</button>
+    <button class="lang-btn">ES</button>
+    <button class="lang-btn">FR</button>
+    <button class="lang-btn">DE</button>
+    <button class="lang-btn">中文</button>
+    <button class="lang-btn">AR</button>
+    <button class="lang-btn">PT</button>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo-wrap">
+    <svg class="logo-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="22" cy="22" r="20" fill="none" stroke="rgba(201,169,110,0.2)" stroke-width="0.8"/>
+      <polygon points="22,3 29,17 44,22 29,27 22,41 15,27 0,22 15,17" fill="none" stroke="#c9a96e" stroke-width="1.1"/>
+      <polygon points="22,10 27,19 36,22 27,25 22,34 17,25 8,22 17,19" fill="#c9a96e" opacity="0.12"/>
+      <text x="22" y="27" text-anchor="middle" font-family="'Cormorant Garamond',Georgia,serif" font-size="9.5" font-weight="400" fill="#c9a96e" letter-spacing="0.5">AHG</text>
+    </svg>
+    <div class="logo-text">
+      <span class="wordmark">Action Hospitality Group</span>
+      <span class="tagline">Global Luxury Hospitality</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#design">Design</a></li>
+    <li><a href="#serve">Clients</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#existing">Existing Properties</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Get a Quote</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Global Luxury Hospitality, FF&amp;E &amp; Design</div>
+    <h1 class="hero-h1">
+      From <em>Concept</em><br>
+      <span class="indent">to Grand</span><br>
+      <span class="indent" style="padding-left:4rem"><em>Opening</em></span>
+    </h1>
+    <p class="hero-sub">We specify, design, procure, deliver, and install everything a world-class property needs — from the first blueprint to the final table setting. New builds, existing properties, renovations, and more.</p>
+    <div class="hero-btns">
+      <a href="#services" class="btn-primary">Our Services</a>
+      <a href="#contact" class="btn-outline">Start a Project</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img class="hero-img" src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1200&q=85&fit=crop" alt="Luxury hotel lobby"/>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item"><div class="stat-num">10</div><div class="stat-label">Core Services</div></div>
+    <div class="stat-item"><div class="stat-num">14+</div><div class="stat-label">Product Categories</div></div>
+    <div class="stat-item"><div class="stat-num">Global</div><div class="stat-label">Reach</div></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="world-band">
+  <div class="world-inner">
+    <span>FF&amp;E Specification</span><span>Interior Design Services</span><span>Luxury Hotels</span><span>Country Clubs</span><span>Multifamily</span>
+    <span>New Construction</span><span>Property Renovation</span><span>Turnkey Furnishing</span><span>Design Firm Partners</span><span>Existing Properties</span><span>Dallas, Texas</span>
+    <span>FF&amp;E Specification</span><span>Interior Design Services</span><span>Luxury Hotels</span><span>Country Clubs</span><span>Multifamily</span>
+    <span>New Construction</span><span>Property Renovation</span><span>Turnkey Furnishing</span><span>Design Firm Partners</span><span>Existing Properties</span><span>Dallas, Texas</span>
+  </div>
+</div>
+
+<!-- HQ BAND -->
+<div class="hq-band">
+  <div class="hq-left">
+    <div class="hq-dot"></div>
+    <div class="hq-text"><strong>Global HQ — Dallas, Texas</strong> &nbsp;|&nbsp; Design · Specification · Procurement · Installation · Worldwide</div>
+  </div>
+  <div class="hq-regions">
+    <div class="hq-region active">Americas</div>
+    <div class="hq-region">Europe</div>
+    <div class="hq-region">Middle East</div>
+    <div class="hq-region">Asia Pacific</div>
+    <div class="hq-region">Africa</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="fade-in">
+    <div class="section-label">About Action Hospitality Group</div>
+    <h2 class="section-h2">The Nation's Leading <em>On-Trend</em> Hospitality Partner</h2>
+    <div class="gold-line"></div>
+    <p class="section-body" style="margin-bottom:1.2rem">Action Hospitality Group is a global luxury hospitality consultancy headquartered in Dallas, Texas. We are recognized as the most on-trend firm in the nation — bridging the gap between vision and reality for developers, design firms, architects, and operators building world-class properties.</p>
+    <p class="section-body" style="margin-bottom:2rem">From full interior design services and FF&amp;E specification on new builds, to property-wide renovation of existing hotels and clubs — we are the single point of contact that keeps every project ahead of trend, on budget, and on time.</p>
+    <div class="region-pills">
+      <div class="region-pill">🏨 Hotels</div>
+      <div class="region-pill">🏌️ Country Clubs</div>
+      <div class="region-pill">🏢 Multifamily</div>
+      <div class="region-pill">🍽️ Fine Dining</div>
+      <div class="region-pill">🔄 Existing Properties</div>
+      <div class="region-pill">🌍 Global</div>
+    </div>
+    <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+      <a href="#services" class="btn-primary">Our Services</a>
+      <a href="#contact" class="btn-outline">Start a Project</a>
+    </div>
+  </div>
+  <div class="fade-in about-img-wrap">
+    <img class="about-img" src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80&fit=crop" alt="Luxury hotel room"/>
+    <div class="about-badge">
+      <span class="big">HQ</span>
+      <span class="small">Dallas, TX</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- SIGNATURE STATEMENT -->
+<section style="background:#080807;padding:8rem 4rem;text-align:center;">
+  <h2 style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:#f8f6f1;max-width:900px;margin:0 auto;line-height:1.4;">
+    We don’t furnish properties.<br>
+    <em style="color:#b8954f;font-style:italic;">We elevate experiences.</em>
+  </h2>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="services-header fade-in">
+    <div>
+      <div class="section-label" style="color:var(--gold)">What We Do</div>
+      <h2 class="section-h2 light">Full-Spectrum <em>Services</em></h2>
+    </div>
+    <a href="#contact" class="btn-outline">Start a Project</a>
+  </div>
+  <div class="services-grid">
+    <div class="svc-card fade-in">
+      <div>
+        <div class="svc-num">01</div>
+        <span class="svc-icon">🎨</span>
+        <div class="svc-name">Interior Design Services</div>
+        <div class="svc-desc">Don't have an in-house design team? We provide full-service interior design for hospitality projects — concept development, space planning, material selections, mood boards, and full design documentation. We bring your brand vision to life from day one.</div>
+      </div>
+      <div class="svc-arrow">Learn More →</div>
+    </div>
+    <div class="svc-card fade-in">
+      <div>
+        <div class="svc-num">02</div>
+        <span class="svc-icon">📐</span>
+        <div class="svc-name">FF&amp;E Specification</div>
+        <div class="svc-desc">We work directly with architects and interior design firms to specify the right furniture, fixtures, and equipment at the blueprint stage — ensuring every product is on-brand, code-compliant, and install-ready before ground breaks.</div>
+      </div>
+      <div class="svc-arrow">Learn More →</div>
+    </div>
+    <div class="svc-card fade-in">
+      <div>
+        <div class="svc-num">03</div>
+        <span class="svc-icon">🏗️</span>
+        <div class="svc-name">New Build Consulting</div>
+        <div class="svc-desc">From concept through construction, we advise developers and GCs on hospitality product selections, spatial planning for FOH and BOH, and vendor coordination — keeping builds on schedule and on budget.</div>
+      </div>
+      <div class="svc-arrow">Learn More →</div>
+    </div>
+    <div class="svc-card fade-in">
+      <div>
+        <div class="svc-num">04</div>
+        <span class="svc-icon">🏨</span>
+        <div class="svc-name">Turnkey Furnishing</div>
+        <div class="svc-desc">We fully furnish new hotels, multifamily properties, and club facilities from blank canvas to ribbon cutting — managing every vendor, every delivery, every room, so ownership doesn't have to.</div>
+      </div>
+      <div class="svc-arrow">Learn More →</div>
+    </div>
+    <div class="svc-card fade-in">
+      <div>
+        <div class="svc-num">05</div>
+        <span class="svc-icon">📦</span>
+        <div class="svc-name">Procurement Management</div>
+        <div class="svc-desc">We manage the full procurement lifecycle — vendor sourcing, purchase orders, lead time tracking, quality control, and delivery coordination — across every product category and every continent.</div>
+      </div>
+      <div class="svc-arrow">Learn More →</div>
+    </div>
+    <div class="svc-card fade-in">
+      <div>
+        <div class="svc-num">06</div>
+        <span class="svc-icon">🔧</span>
+        <div class="svc-name">Construction Coordination</div>
+        <div class="svc-desc">We liaise between your GC, design team, and product vendors to ensure specs translate seamlessly to the field — reducing costly change orders and installation surprises on luxury builds.</div>
+      </div>
+      <div class="svc-arrow">Learn More →</div>
+    </div>
+    <div class="svc-card fade-in">
+      <div>
+        <div class="svc-num">07</div>
+        <span class="svc-icon">🔄</span>
+        <div class="svc-name">Property Renovation & Refresh</div>
+        <div class="svc-desc">Already operating? We partner with existing hotels, clubs, and multifamily assets to execute phased renovations, concept refreshes, and full property rebrands — maximizing ROI while minimizing operational disruption.</div>
+      </div>
+      <div class="svc-arrow">Learn More →</div>
+    </div>
+    <div class="svc-card fade-in">
+      <div>
+        <div class="svc-num">08</div>
+        <span class="svc-icon">📊</span>
+        <div class="svc-name">ROI &amp; Asset Optimization</div>
+        <div class="svc-desc">We analyze your existing property's FF&amp;E, design, and operational product mix against current market trends — then build a strategic upgrade plan that increases RevPAR, ADR, member satisfaction, and asset value.</div>
+      </div>
+      <div class="svc-arrow">Learn More →</div>
+    </div>
+    <div class="svc-card fade-in">
+      <div>
+        <div class="svc-num">09</div>
+        <span class="svc-icon">🛎️</span>
+        <div class="svc-name">Ongoing Hospitality Consulting</div>
+        <div class="svc-desc">Already open? We help operating properties refresh their FOH and BOH — from tabletop resets and linen programs to full equipment upgrades and outdoor patio overhauls that keep your property ahead of the competition.</div>
+      </div>
+      <div class="svc-arrow">Learn More →</div>
+    </div>
+  </div>
+</section>
+
+<!-- DESIGN SERVICES BANNER -->
+<section class="design-banner" id="design">
+  <div class="fade-in">
+    <div class="design-badge">New Service</div>
+    <div class="section-label" style="color:var(--gold)">Design Services</div>
+    <h2 class="section-h2 light">No In-House Design Team? <em>We've Got You.</em></h2>
+    <div class="gold-line" style="background:var(--gold);"></div>
+    <p style="font-size:12px;font-weight:300;line-height:2;color:var(--gray-mid);margin-bottom:0.5rem;">Not every developer or ownership group has an in-house design firm — and that's exactly where we step in. Action Hospitality Group provides full interior design services tailored specifically for hospitality, multifamily, and club properties.</p>
+    <p style="font-size:12px;font-weight:300;line-height:2;color:var(--gray-mid);">We bring the nation's most on-trend hospitality aesthetic to your project — translating your brand, your market, and your guest profile into a design that drives bookings, increases rates, and commands premium positioning.</p>
+    <ul class="design-list">
+      <li>Concept development and brand-aligned mood boards</li>
+      <li>Full space planning and design documentation</li>
+      <li>Material, finish, and furniture selections curated for ROI</li>
+      <li>Design oversight through procurement and installation</li>
+      <li>Trend-forward, market-calibrated aesthetic direction</li>
+      <li>Available as a standalone service or bundled with full FF&amp;E procurement</li>
+    </ul>
+    <a href="#contact" class="btn-primary" style="margin-top:2rem;">Inquire About Design Services</a>
+  </div>
+  <div class="fade-in design-cards">
+    <div class="design-card">
+      <span class="design-card-icon">🖼️</span>
+      <div class="design-card-title">Concept & Vision</div>
+      <div class="design-card-desc">Brand-anchored design concepts that connect to your target guest, your market position, and your revenue goals.</div>
+    </div>
+    <div class="design-card">
+      <span class="design-card-icon">📏</span>
+      <div class="design-card-title">Space Planning</div>
+      <div class="design-card-desc">Optimized layouts for lobby, dining, guestroom, amenity, and outdoor spaces designed for flow, experience, and efficiency.</div>
+    </div>
+    <div class="design-card">
+      <span class="design-card-icon">🎨</span>
+      <div class="design-card-title">Material & Finish Selection</div>
+      <div class="design-card-desc">The most on-trend materials, finishes, and palettes — sourced and specified to hold up to commercial-grade hospitality use.</div>
+    </div>
+    <div class="design-card">
+      <span class="design-card-icon">🏆</span>
+      <div class="design-card-title">Design + Procurement Bundled</div>
+      <div class="design-card-desc">Combine our design services with full FF&amp;E procurement for a seamless, single-partner solution from concept to keys.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="fade-in">
+    <div class="section-label">How We Work</div>
+    <h2 class="section-h2">Our <em>Process</em></h2>
+    <p class="section-body" style="max-width:580px;margin-top:0.5rem;">Whether you come to us with full design documentation or a blank lot, we seamlessly enter at the right phase — and carry the project through to a world-class opening.</p>
+  </div>
+  <div class="process-steps" style="grid-template-columns:repeat(5,1fr);">
+    <div class="process-step fade-in">
+      <div class="step-circle design-step"><span class="step-num">01</span></div>
+      <div class="step-title">Design</div>
+      <div class="step-desc">For clients without a design firm, we develop the full interior design concept, space plan, and material palette. <em style="color:var(--gold);font-style:normal;font-size:9px;">Optional — skip if you have a design team.</em></div>
+    </div>
+    <div class="process-step fade-in">
+      <div class="step-circle"><span class="step-num">02</span></div>
+      <div class="step-title">Specify</div>
+      <div class="step-desc">We collaborate with your design team to spec every product — tabletop, furniture, equipment, linens, and amenities — aligned with your brand vision and budget.</div>
+    </div>
+    <div class="process-step fade-in">
+      <div class="step-circle"><span class="step-num">03</span></div>
+      <div class="step-title">Procure</div>
+      <div class="step-desc">We manage the full ordering process across all vendors globally — tracking lead times, managing quality control, and keeping your project on schedule.</div>
+    </div>
+    <div class="process-step fade-in">
+      <div class="step-circle"><span class="step-num">04</span></div>
+      <div class="step-title">Deliver</div>
+      <div class="step-desc">We coordinate all deliveries to site — managing logistics, receiving, and warehousing so product arrives when you need it, not before or after.</div>
+    </div>
+    <div class="process-step fade-in">
+      <div class="step-circle"><span class="step-num">05</span></div>
+      <div class="step-title">Install</div>
+      <div class="step-desc">We oversee or directly manage installation and setup — walking the property with ownership to ensure every detail meets the standard of a world-class opening.</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO WE SERVE -->
+<section class="serve" id="serve">
+  <div class="section-label fade-in" style="color:var(--gold)">Who We Serve</div>
+  <h2 class="section-h2 light fade-in">Built for the <em>Best</em> in the Business</h2>
+  <div class="serve-grid">
+    <div class="serve-card fade-in">
+      <div class="serve-tag">Developers</div>
+      <div class="serve-num">01</div>
+      <div class="serve-title">Real Estate Developers</div>
+      <div class="serve-body">We plug into new construction projects at the earliest stage — advising on hospitality product specs, providing design services where needed, and managing procurement so developers can focus on the build, not the buying.</div>
+    </div>
+    <div class="serve-card fade-in">
+      <div class="serve-tag">Design Partners</div>
+      <div class="serve-num">02</div>
+      <div class="serve-title">Interior Design Firms</div>
+      <div class="serve-body">We are the procurement arm for design firms that specify luxury hospitality products. We source, vet, and deliver what you spec — and can introduce world-class brands you may not have access to yet.</div>
+    </div>
+    <div class="serve-card fade-in">
+      <div class="serve-tag">Accommodation</div>
+      <div class="serve-num">03</div>
+      <div class="serve-title">Luxury Hotels</div>
+      <div class="serve-body">From boutique properties to full-scale resorts — new builds and existing assets — we outfit dining rooms, bars, banquet halls, guestrooms, and room service programs from spec to opening day.</div>
+    </div>
+    <div class="serve-card fade-in">
+      <div class="serve-tag">Existing Assets</div>
+      <div class="serve-num">04</div>
+      <div class="serve-title">Operating Properties</div>
+      <div class="serve-body">Already open and looking to drive more revenue? We work with existing hotels, clubs, and multifamily assets to execute phased renovations, brand refreshes, and strategic product upgrades that directly increase RevPAR and guest satisfaction scores.</div>
+    </div>
+    <div class="serve-card fade-in">
+      <div class="serve-tag">Private Clubs</div>
+      <div class="serve-num">05</div>
+      <div class="serve-title">Country Clubs</div>
+      <div class="serve-body">Members expect excellence in every room. We supply tabletop, linens, outdoor furniture, kitchen equipment, and club amenities that elevate the member experience — and help clubs attract and retain premium memberships.</div>
+    </div>
+    <div class="serve-card fade-in">
+      <div class="serve-tag">Residential</div>
+      <div class="serve-num">06</div>
+      <div class="serve-title">Multifamily &amp; Mixed-Use</div>
+      <div class="serve-body">Luxury apartment towers, mixed-use developments, and branded residences demand hospitality-grade amenity spaces. We deliver the furniture, fixtures, and finishes that set them apart and command higher rents.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ROI SECTION — EXISTING PROPERTIES -->
+<section class="roi-section" id="existing">
+  <div class="fade-in">
+    <div class="section-label">Existing Properties</div>
+    <h2 class="section-h2">We Drive <em>ROI</em> for Operating Assets</h2>
+    <div class="gold-line"></div>
+    <p class="section-body" style="max-width:680px;margin-bottom:1rem;">You don't need to be breaking ground to work with us. Some of our most impactful engagements are with existing, operating properties — hotels, country clubs, and multifamily assets looking to increase revenue, improve guest experience, and strengthen their competitive positioning. As the most on-trend firm in the nation, we know exactly what today's luxury guests expect — and we deliver it.</p>
+  </div>
+  <div class="roi-grid fade-in">
+    <div class="roi-card">
+      <span class="roi-icon">📈</span>
+      <div class="roi-title">RevPAR &amp; ADR Uplift</div>
+      <div class="roi-body">Strategic FF&amp;E upgrades, fresh design direction, and on-trend product refreshes directly correlate to higher average daily rates, improved booking velocity, and stronger online review scores.</div>
+      <span class="roi-stat">↑ ADR</span>
+      <div class="roi-stat-label">Strategic Product Upgrades</div>
+    </div>
+    <div class="roi-card">
+      <span class="roi-icon">🏆</span>
+      <div class="roi-title">Competitive Repositioning</div>
+      <div class="roi-body">We identify where your property is losing ground to newer competitors — and build a targeted renovation or refresh strategy that brings you back to the front of the market, fast.</div>
+      <span class="roi-stat">Market-First</span>
+      <div class="roi-stat-label">Trend-Led Strategy</div>
+    </div>
+    <div class="roi-card">
+      <span class="roi-icon">💡</span>
+      <div class="roi-title">Phased Approach</div>
+      <div class="roi-body">We understand you can't shut down the whole property. We develop phased renovation plans that minimize disruption to operations, protect revenue during transition, and deliver impact fast.</div>
+      <span class="roi-stat">Zero Downtime</span>
+      <div class="roi-stat-label">Phased Execution</div>
+    </div>
+    <div class="roi-card">
+      <span class="roi-icon">🍽️</span>
+      <div class="roi-title">F&amp;B Program Refresh</div>
+      <div class="roi-body">Reinvigorate your dining rooms, bars, and banquet facilities with updated tabletop, furniture, and ambiance upgrades — driving F&amp;B revenue and guest spend per visit.</div>
+      <span class="roi-stat">↑ F&amp;B Revenue</span>
+      <div class="roi-stat-label">Tabletop & Environment</div>
+    </div>
+    <div class="roi-card">
+      <span class="roi-icon">🏌️</span>
+      <div class="roi-title">Club Amenity Enhancement</div>
+      <div class="roi-body">Country clubs that invest in amenity upgrades — dining rooms, outdoor terraces, locker facilities, and event spaces — see measurable improvements in member retention and new member acquisition rates.</div>
+      <span class="roi-stat">↑ Retention</span>
+      <div class="roi-stat-label">Member Experience</div>
+    </div>
+    <div class="roi-card">
+      <span class="roi-icon">🛏️</span>
+      <div class="roi-title">Guestroom &amp; Suite Upgrades</div>
+      <div class="roi-body">Case goods, soft goods, lighting, and amenity upgrades across guestroom inventory deliver outsized review score improvements and unlock premium suite pricing that drives long-term yield.</div>
+      <span class="roi-stat">↑ Review Score</span>
+      <div class="roi-stat-label">Room Product Investment</div>
+    </div>
+  </div>
+</section>
+
+<!-- EXISTING PROPERTIES CTA BANNER -->
+<div class="existing-prop">
+  <div class="existing-inner">
+    <div>
+      <h2 class="existing-h">Own or Operate an Existing Property? Let's Talk.</h2>
+      <p class="existing-body">Whether you need a full property redesign, a targeted FF&amp;E refresh, or a strategic analysis of where your asset is underperforming — we have the expertise, the relationships, and the trend intelligence to make it happen. Large-order procurement, phased or all-at-once.</p>
+      <ul class="existing-list">
+        <li>Hotels, resorts &amp; boutique properties</li>
+        <li>Country clubs &amp; private member clubs</li>
+        <li>Multifamily &amp; mixed-use amenity spaces</li>
+        <li>Fine dining &amp; upscale F&amp;B concepts</li>
+        <li>Branded residences &amp; serviced apartments</li>
+      </ul>
+      <a href="#contact" class="btn-dark">Request an Asset Review</a>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600&q=80&fit=crop" alt="Luxury hotel renovation" style="width:100%;aspect-ratio:4/3;object-fit:cover;"/>
+    </div>
+  </div>
+</div>
+
+<!-- DESIGN FIRM PARTNERS -->
+<section class="partners" id="partners">
+  <div class="fade-in">
+    <div class="section-label">Design &amp; Construction Partners</div>
+    <h2 class="section-h2">We Work With <em>Your Team</em></h2>
+    <div class="gold-line"></div>
+    <p class="section-body" style="max-width:600px;margin-bottom:3rem">We embed ourselves into your project team — speaking the language of architects, designers, and GCs, so product decisions are made right the first time.</p>
+  </div>
+  <div class="partners-grid fade-in">
+    <div class="partner-card">
+      <span class="partner-icon">✏️</span>
+      <div class="partner-title">Interior Design Firms</div>
+      <div class="partner-body">We act as your procurement partner — sourcing, vetting, and managing every FF&amp;E item you specify. We bring access to world-class global brands and handle all vendor relationships, logistics, and delivery so your team can stay focused on design.</div>
+    </div>
+    <div class="partner-card">
+      <span class="partner-icon">📏</span>
+      <div class="partner-title">Architects &amp; Developers</div>
+      <div class="partner-body">We join your project at the specification phase — advising on product selections that are on-brand, code-compliant, and buildable. We bridge the gap between the design intent and what actually gets installed on opening day.</div>
+    </div>
+    <div class="partner-card">
+      <span class="partner-icon">🏗️</span>
+      <div class="partner-title">General Contractors</div>
+      <div class="partner-body">We coordinate directly with your GC team to ensure product specs translate cleanly to the field. We track lead times, manage receiving, and schedule installs around your construction milestones — minimizing delays and costly surprises.</div>
+    </div>
+    <div class="partner-card">
+      <span class="partner-icon">🏢</span>
+      <div class="partner-title">Real Estate Ownership Groups</div>
+      <div class="partner-body">We represent your interests across all product categories — negotiating with vendors, managing budgets, and ensuring the finished property reflects the investment grade of the asset. One partner. Every product category. One invoice.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS — expanded to 14 categories -->
+<section class="products" id="products">
+  <div class="products-header fade-in">
+    <div>
+      <div class="section-label" style="color:var(--gold)">Product Categories</div>
+      <h2 class="section-h2 light">Everything Your <em>Property</em> Needs</h2>
+    </div>
+    <a href="#contact" class="btn-outline">Request Catalog</a>
+  </div>
+  <div class="prod-grid">
+    <div class="prod-card fade-in">
+      <div><div class="prod-num">01</div><div class="prod-name">Tabletop &amp; Dinnerware</div><div class="prod-desc">Fine china, artisan ceramics, crystal glassware, plating accessories, and signature serveware. Trend-curated for contemporary luxury dining programs.</div></div>
+      <div class="prod-arrow">Inquire →</div>
+    </div>
+    <div class="prod-card fade-in">
+      <div><div class="prod-num">02</div><div class="prod-name">Guest Room Furniture</div><div class="prod-desc">Commercial-grade beds, case goods, desks, seating, and headboards. Specified to brand standard, built for longevity, and procured at volume pricing.</div></div>
+      <div class="prod-arrow">Inquire →</div>
+    </div>
+    <div class="prod-card fade-in">
+      <div><div class="prod-num">03</div><div class="prod-name">Lobby &amp; Public Area Furniture</div><div class="prod-desc">Lounge seating, feature chairs, banquettes, ottomans, and decorative accent pieces that set the tone from the moment guests arrive.</div></div>
+      <div class="prod-arrow">Inquire →</div>
+    </div>
+    <div class="prod-card fade-in">
+      <div><div class="prod-num">04</div><div class="prod-name">Restaurant &amp; Bar Seating</div><div class="prod-desc">Commercial dining chairs, barstools, banquettes, and booths — available in a full range of upholstery, finish, and configuration options for any F&amp;B concept.</div></div>
+      <div class="prod-arrow">Inquire →</div>
+    </div>
+    <div class="prod-card fade-in">
+      <div><div class="prod-num">05</div><div class="prod-name">Linens &amp; Soft Goods</div><div class="prod-desc">Premium tablecloths, napkins, bed linens, bath towels, robes, and uniform textiles. Sourced from the world's finest mills and specified for hospitality-grade durability.</div></div>
+      <div class="prod-arrow">Inquire →</div>
+    </div>
+    <div class="prod-card fade-in">
+      <div><div class="prod-num">06</div><div class="prod-name">Kitchen &amp; BOH Equipment</div><div class="prod-desc">Commercial kitchen equipment, food prep tools, cooking systems, and back-of-house smallwares. Spec'd for your menu concept, your volume, and your team.</div></div>
+      <div class="prod-arrow">Inquire →</div>
+    </div>
+    <div class="prod-card fade-in">
+      <div><div class="prod-num">07</div><div class="prod-name">Outdoor &amp; Patio</div><div class="prod-desc">Luxury commercial-grade outdoor furniture, umbrellas, shade structures, patio dining sets, and poolside seating for resorts, clubs, and rooftop venues.</div></div>
+      <div class="prod-arrow">Inquire →</div>
+    </div>
+    <div class="prod-card fade-in">
+      <div><div class="prod-num">08</div><div class="prod-name">Guest Room Amenities</div><div class="prod-desc">In-room amenity programs — bath products, wellness kits, minibars, branded packaging, and turndown accessories — curated to elevate the guest experience and drive loyalty.</div></div>
+      <div class="prod-arrow">Inquire →</div>
+    </div>
+    <div class="prod-card fade-in">
+      <div><div class="prod-num">09</div><div class="prod-name">Lighting &amp; Fixtures</div><div class="prod-desc">Decorative and architectural lighting — pendants, sconces, chandeliers, and feature lighting — sourced globally and specified to complement your design concept and brand.</div></div>
+      <div class="prod-arrow">Inquire →</div>
+    </div>
+    <div class="prod-card fade-in">
+      <div><div class="prod-num">10</div><div class="prod-name">Art &amp; Decorative Accessories</div><div class="prod-desc">Custom art programs, mirrors, sculptures, and decorative objects that anchor the aesthetic identity of lobbies, guestrooms, dining rooms, and corridors.</div></div>
+      <div class="prod-arrow">Inquire →</div>
+    </div>
+    <div class="prod-card fade-in">
+      <div><div class="prod-num">11</div><div class="prod-name">Banquet &amp; Event Equipment</div><div class="prod-desc">Banquet chairs, folding tables, event staging, portable bars, chafing equipment, linen service packages, and full event turnkey for hotels and private clubs.</div></div>
+      <div class="prod-arrow">Inquire →</div>
+    </div>
+    <div class="prod-card fade-in">
+      <div><div class="prod-num">12</div><div class="prod-name">Spa &amp; Wellness Furnishings</div><div class="prod-desc">Treatment tables, locker room fixtures, relaxation lounge seating, reception furniture, and spa amenity programs for resort spas, hotel wellness centers, and club facilities.</div></div>
+      <div class="prod-arrow">Inquire →</div>
+    </div>
+    <div class="prod-card fade-in">
+      <div><div class="prod-num">13</div><div class="prod-name">Fitness &amp; Recreation Equipment</div><div class="prod-desc">Commercial-grade fitness equipment, fitness center design, pool furniture, sport facility accessories, and club recreation equipment programs.</div></div>
+      <div class="prod-arrow">Inquire →</div>
+    </div>
+    <div class="prod-card fade-in">
+      <div><div class="prod-num">14</div><div class="prod-name">Signage &amp; Brand Touchpoints</div><div class="prod-desc">Wayfinding, room signage, menu boards, directional signage, branded collateral holders, and environmental graphics that reinforce brand identity throughout the property.</div></div>
+      <div class="prod-arrow">Inquire →</div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOBAL REACH -->
+<section class="global-reach" id="global">
+  <div class="reach-header fade-in">
+    <div class="section-label">Global Reach</div>
+    <h2 class="section-h2">Speaking Your <em>Language</em></h2>
+    <p style="font-size:11px;font-weight:300;color:var(--gray-mid);max-width:480px;margin:0.8rem 0 0;line-height:1.9;">Headquartered in Dallas with a global mindset — our team serves luxury hospitality clients in 7 languages across every major region.</p>
+  </div>
+  <div class="reach-cards fade-in">
+    <div class="reach-card"><span class="reach-card-flag">🇺🇸</span><div class="reach-card-name">Americas</div><div class="reach-card-status">HQ</div></div>
+    <div class="reach-card"><span class="reach-card-flag">🇬🇧</span><div class="reach-card-name">Europe</div><div class="reach-card-status">Active</div></div>
+    <div class="reach-card"><span class="reach-card-flag">🇦🇪</span><div class="reach-card-name">Middle East</div><div class="reach-card-status">Active</div></div>
+    <div class="reach-card"><span class="reach-card-flag">🇨🇳</span><div class="reach-card-name">Asia Pacific</div><div class="reach-card-status">Active</div></div>
+    <div class="reach-card"><span class="reach-card-flag">🌍</span><div class="reach-card-name">Africa</div><div class="reach-card-status">Active</div></div>
+  </div>
+</section>
+
+<!-- LANGUAGES -->
+<section class="lang-section">
+  <div class="section-label fade-in" style="color:var(--gold)">Languages We Serve</div>
+  <h2 class="section-h2 light fade-in">Global <em>Communication</em></h2>
+  <div class="lang-grid fade-in">
+    <div class="lang-card"><span class="lang-flag">🇺🇸</span><div class="lang-name">English</div><div class="lang-native">English</div></div>
+    <div class="lang-card"><span class="lang-flag">🇪🇸</span><div class="lang-name">Spanish</div><div class="lang-native">Español</div></div>
+    <div class="lang-card"><span class="lang-flag">🇫🇷</span><div class="lang-name">French</div><div class="lang-native">Français</div></div>
+    <div class="lang-card"><span class="lang-flag">🇩🇪</span><div class="lang-name">German</div><div class="lang-native">Deutsch</div></div>
+    <div class="lang-card"><span class="lang-flag">🇨🇳</span><div class="lang-name">Mandarin</div><div class="lang-native">中文</div></div>
+    <div class="lang-card"><span class="lang-flag">🇸🇦</span><div class="lang-name">Arabic</div><div class="lang-native">العربية</div></div>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="mission">
+  <div class="fade-in">
+    <div class="mission-dividers"><span></span><span></span><span></span></div>
+    <p class="mission-quote">"From the first blueprint to the final table setting — and every design decision in between — we are the partner that turns luxury visions into world-class, revenue-generating realities."</p>
+    <div class="mission-attr">— Action Hospitality Group · Dallas, Texas</div>
+    <div class="mission-dividers"><span></span><span></span><span></span></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="fade-in">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-h2">Let's Build Something <em>Exceptional</em></h2>
+    <div class="gold-line"></div>
+    <p class="section-body" style="margin-bottom:2rem">Whether you're breaking ground on a new build, furnishing a full property, looking for design services, or seeking a strategic partner to drive more ROI from an existing asset — our team is ready.</p>
+    <div>
+      <div class="cinfo-item">
+        <div class="cinfo-label">Email</div>
+        <div class="cinfo-val"><a href="mailto:info@actionhospitalitygroup.com">info@actionhospitalitygroup.com</a></div>
+      </div>
+      <div class="cinfo-item">
+        <div class="cinfo-label">Global Headquarters</div>
+        <div class="cinfo-val">
+          <div class="hq-marker"><div class="hq-dot-sm"></div><div class="hq-marker-text">Dallas, Texas, USA</div></div>
+        </div>
+      </div>
+      <div class="cinfo-item">
+        <div class="cinfo-label">Follow Us</div>
+        <div class="social-links">
+          <a href="#" class="social-link">LinkedIn</a>
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fade-in">
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <div class="form-group"><label>First Name</label><input type="text" placeholder="Jane" required></div>
+        <div class="form-group"><label>Last Name</label><input type="text" placeholder="Smith" required></div>
+      </div>
+      <div class="form-group"><label>Email Address</label><input type="email" placeholder="jane@grandhotel.com" required></div>
+      <div class="form-group"><label>Company / Property Name</label><input type="text" placeholder="The Grand Hotel"></div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>I Am A...</label>
+          <select>
+            <option value="">Select one...</option>
+            <option>Hotel Owner / Operator</option>
+            <option>Real Estate Developer</option>
+            <option>Interior Design Firm</option>
+            <option>General Contractor</option>
+            <option>Country Club / Private Club</option>
+            <option>Restaurant Owner / Chef</option>
+            <option>Multifamily Developer</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Service Needed</label>
+          <select>
+            <option value="">Select service...</option>
+            <option>Interior Design Services</option>
+            <option>FF&amp;E Specification</option>
+            <option>New Build Consulting</option>
+            <option>Turnkey Furnishing</option>
+            <option>Procurement Management</option>
+            <option>Construction Coordination</option>
+            <option>Property Renovation / Refresh</option>
+            <option>ROI &amp; Asset Optimization</option>
+            <option>Ongoing Hospitality Consulting</option>
+            <option>Product Sourcing</option>
+            <option>General Inquiry</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Property Type</label>
+          <select>
+            <option value="">Select type...</option>
+            <option>New Build — Hotel / Resort</option>
+            <option>Existing Hotel / Resort</option>
+            <option>Country Club / Private Club</option>
+            <option>Multifamily / Mixed-Use</option>
+            <option>Fine Dining / Restaurant</option>
+            <option>Branded Residences</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Region</label>
+          <select>
+            <option value="">Select region...</option>
+            <option>North America</option>
+            <option>Latin America</option>
+            <option>Europe</option>
+            <option>Middle East &amp; Africa</option>
+            <option>Asia Pacific</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group"><label>Tell Us About Your Project</label><textarea placeholder="Describe your property, timeline, scope, and what you need..."></textarea></div>
+      <button type="submit" class="form-submit">Send Inquiry</button>
+      <p class="form-note">We respond within one business day.</p>
+      <div id="form-confirm" style="display:none;font-size:12px;color:#3a3835;padding:10px 0;font-weight:300;">✦ Thank you — we'll be in touch shortly.</div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">
+        <svg width="36" height="36" viewBox="0 0 44 44" fill="none">
+          <circle cx="22" cy="22" r="20" fill="none" stroke="rgba(201,169,110,0.2)" stroke-width="0.8"/>
+          <polygon points="22,3 29,17 44,22 29,27 22,41 15,27 0,22 15,17" fill="none" stroke="#c9a96e" stroke-width="1.1"/>
+          <polygon points="22,10 27,19 36,22 27,25 22,34 17,25 8,22 17,19" fill="#c9a96e" opacity="0.12"/>
+          <text x="22" y="27" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="9.5" fill="#c9a96e" letter-spacing="0.5">AHG</text>
+        </svg>
+        <div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:300;color:var(--white);letter-spacing:0.05em;">Action Hospitality Group</div>
+          <div style="font-size:7px;font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-top:3px;">Global Luxury Hospitality</div>
+        </div>
+      </div>
+      <p class="footer-tagline" style="margin-top:1rem;">Interior Design · FF&amp;E Specification · Procurement · Turnkey Furnishing · Property Renovation · Construction Coordination · Global Delivery</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-col-links">
+          <li><a href="#design">Interior Design Services</a></li>
+          <li><a href="#services">FF&amp;E Specification</a></li>
+          <li><a href="#services">New Build Consulting</a></li>
+          <li><a href="#services">Turnkey Furnishing</a></li>
+          <li><a href="#services">Procurement Management</a></li>
+          <li><a href="#services">Property Renovation</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Clients</div>
+        <ul class="footer-col-links">
+          <li><a href="#serve">Luxury Hotels</a></li>
+          <li><a href="#existing">Existing Properties</a></li>
+          <li><a href="#serve">Developers</a></li>
+          <li><a href="#serve">Design Firms</a></li>
+          <li><a href="#serve">Country Clubs</a></li>
+          <li><a href="#serve">Multifamily</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Connect</div>
+        <ul class="footer-col-links">
+          <li><a href="mailto:info@actionhospitalitygroup.com">Email Us</a></li>
+          <li><a href="#contact">Start a Project</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="foot-copy">© 2026 Action Hospitality Group &nbsp;·&nbsp; Dallas, Texas, USA &nbsp;·&nbsp; All Rights Reserved</p>
+    <div class="foot-social">
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+    </div>
+  </div>
+
+<div style="text-align:center;color:#3a3835;font-size:9px;margin-top:1rem;letter-spacing:0.08em;">
+© 2026 Action Hospitality Group. All Rights Reserved. <br>
+Dallas, Texas | Global Operations
+</div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+},{threshold:0.08});
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+function handleSubmit(e){
+  e.preventDefault();
+  document.getElementById('form-confirm').style.display='block';
+  const btn=e.target.querySelector('.form-submit');
+  btn.disabled=true;btn.style.opacity='0.5';
+}
+</script>
+</body>
+</html>
